@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --primary-color: #bb86fc;
+  --secondary-color: #03dac6;
+  --border-color: #333;
+  --bg-secondary: #6a6a6a;
+}
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.todoList {
+  width: auto;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.todoList .top img {
+  width: 2rem;
+  filter: invert(100%);
+  top: 0;
+}
+
+.input-cont {
+  width: 20rem;
+  height: 2.5rem;
+  background: var(--border-color);
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+.input-cont input {
+  flex: 1;
+  background: var(--border-color);
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  color: var(--text-color);
+}
+.input-cont button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2.5rem;
+  width: 4.4rem;
+  border-radius: 0.75rem;
+  border: none;
+  background-color: var(--bg-secondary);
+  color: var(--text-color);
+  font-weight: bold;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.input-cont button:hover {
+  background-color: #898989;
+}
+.bottom {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 2.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background-color: var(--border-color);
+  border-radius: 0.75rem;
+  vertical-align: middle;
+  transition: 0.3s ease-in;
+}
+.list:hover {
+  background-color: var(--bg-secondary);
+}
